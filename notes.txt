@@ -1,1 +1,7 @@
 npm init -y -> installs package.json
+
+Under the scripts in package.json write "serve": "node server.js" -> this allows us to [npm run serve] in the command line
+
+npm i express -> install express
+
+npm i nodemon -D -> install script that allows us to save file and server will automatically refresh
