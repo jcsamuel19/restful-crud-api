@@ -1,6 +1,6 @@
 const mongoose = require('mongoose') // anytime we interact with DB we must include this
 const productSchema = mongoose.Schema( // must have a schema in a model
-    { // create an object 
+    { // create an Product object 
         name: {
             type: String,
             required: [true, "Please enter a product name"]
@@ -24,5 +24,5 @@ const productSchema = mongoose.Schema( // must have a schema in a model
         timestamps: true // tracks data that is saved to DB and when data is motified
     }
 )
-const Product = mongoose.model('Product', productSchema) // create a new model
+const Product = mongoose.model('Product', productSchema) // create a new model called Product (Name of Model, schema for the model)
 module.exports = Product; // exporting product
